@@ -1,0 +1,23 @@
+ [ 
+ {
+    "jobName": "mailJobname",
+    "jobGroup": "mailJobGroup",
+	"stepName":"mailStepName",
+  "triggerDetails": {
+    "triggerName": "mailTriggerName",
+    "triggerGroup": "mailTriggerGroup",
+	"priority":3
+  },
+ "task": {
+    "taskClassName": "com.mail.main.SimpleEmail",
+    "taskMethod": "send"
+  },
+  "scheduleDetail":
+{
+	"scheduleType":"INTRADAY",
+	"recurringInterval":"2",
+	"recurringType":"MINUTES"
+}
+ }
+ ]
+ 

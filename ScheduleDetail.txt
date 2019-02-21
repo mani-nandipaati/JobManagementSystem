@@ -1,0 +1,63 @@
+/*use the below one if job need to run for every 3 minutes*/
+{
+	"scheduleType":"INTRADAY",
+	"recurringInterval":"3",
+	"recurringType":"MINUTES"
+}
+/*use the below one if job need to run for every 2 hours staring from 16:12*/
+{
+	"scheduleType":"INTRADAY",
+	"runMinute":12,
+	"runHour":16,
+	"recurringInterval":"2",
+	"recurringType":"HOURLY"
+}
+/*use the below one if job need to run for every 3 days staring from today 16:12*/
+{
+	"scheduleType":"DAILY",
+	"runMinute":12,
+	"runHour":16,
+	"recurringDays":3,
+	"isWeekDay": false
+}
+/*use the below one if job need to run only on Monday, Wednesday & Friday staring from today 10:6*/
+{
+	"scheduleType":"WEEKLY",
+	"runMinute":6,
+	"runHour":10,
+	"weekDays":["MON","FRI","WED"]
+}
+/*use the below one if job need to run 3rd of every month at 10:6*/
+{
+	"scheduleType":"MONTHLY",
+	"runMinute":6,
+	"runHour":10,
+	"dayOfMonth":3,
+	"recurringMonthOfYear":2
+}
+/*use the below one if job need to run on second friday of 4th month of every year of every month at 10:6*/
+{
+	"scheduleType":"MONTHLY",
+	"runMinute":6,
+	"runHour":10,
+	"recurringMonthOfYear":4,
+	"weekOfMonth":"SECOND",
+	"weekDay":"FRI"
+}
+/*use the below one if job need to run on 6th of April every year at 10:6*/
+{
+	"scheduleType":"YEARLY",
+	"runMinute":6,
+	"runHour":10,
+	"dayOfMonth":6,
+	"monthOfYear":"APR"
+}
+/*use the below one if job need to run on Second friday of April every year at 10:6*/
+{
+	"scheduleType":"YEARLY",
+	"runMinute":6,
+	"runHour":10,
+	"weekOfMonth":"SECOND",
+	"weekDay":"FRI",
+	"monthOfYear":"APR"
+}
